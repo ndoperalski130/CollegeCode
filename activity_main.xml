@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id = "@+id/TVHelloworld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congestion"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop = "50pt"
+        />
+    <Button
+        android:id = "@+id/PingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "GPS Pinger"
+        android:layout_centerInParent="true"
+        android:onClick="LaunchActivity"
+        />
+        <Button
+            android:id = "@+id/MapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below = "@+id/PingButton"
+            android:text = "Map View"
+            android:onClick="LaunchActivity"
+            />
+
+</RelativeLayout>

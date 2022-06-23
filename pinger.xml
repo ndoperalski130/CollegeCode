@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id = "@+id/bPing"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text = "Start"
+        android:onClick="startPing"
+        />
+    <Button
+        android:id = "@+id/bStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bPing"
+        android:layout_centerInParent="true"
+        android:text = "Stop"
+        android:onClick="stopPing"
+        />
+    <TextView
+        android:id = "@+id/tTimeElapsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/bStop"
+        android:layout_marginTop="20dp"
+        android:text = "Number of Pings:"
+        android:textSize="14pt"
+        />
+    <TextView
+        android:id = "@+id/tTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tTimeElapsed"
+        android:layout_marginTop="20dp"
+        android:text = "0"
+        android:textSize="14pt"
+        />
+    <TextView
+        android:id = "@+id/tLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text = "Latitude: "
+        android:textSize="14pt"
+        />
+    <TextView
+        android:id="@+id/actualLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/tLat"
+        android:textSize="14pt"
+        android:text = "0"
+        />
+    <TextView
+        android:id="@+id/tLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tLat"
+        android:text = "Longitude:"
+        android:textSize="14pt"
+        />
+    <TextView
+        android:id = "@+id/actualLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tLong"
+        android:layout_alignBottom="@id/tLong"
+        android:text="0"
+        android:textSize="14pt"
+        />
+    <TextView
+        android:id = "@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tLong"
+        android:text = "Time: "
+        android:textSize="14pt"
+        />
+    <TextView
+        android:id = "@+id/actualTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tLong"
+        android:layout_toRightOf="@id/time"
+        android:textSize="14pt"
+        android:text="0"
+        />
+
+    <TextView
+        android:id = "@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="14pt"
+        android:text= "Output"
+        ></TextView>
+
+
+
+
+</RelativeLayout>
